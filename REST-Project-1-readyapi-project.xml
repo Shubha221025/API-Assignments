@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="99e7ee4c-02f5-43aa-8bec-2d9a18b061a3" created="3.8.0" activeEnvironment="Default environment" name="REST Project 1" resourceRoot="" updated="3.8.0 2021-04-27T13:32:15Z" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="1d3dd754-ad83-47c1-bb4f-1eeb4dc26039" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://petstore.swagger.io" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://petstore.swagger.io</con:endpoint></con:endpoints><con:resource name="Pet" path="/v2/pet" id="a7992929-26ea-42f5-9235-52bb7618e859"><con:settings/><con:parameters/><con:resource name="{pet}" path="{pet}" id="04774a6b-2b32-43db-b081-969d9efe6f3b"><con:settings/><con:parameters><con:parameter required="true"><con:name>pet</con:name><con:value>pet</con:value><con:style>TEMPLATE</con:style><con:default>pet</con:default></con:parameter></con:parameters><con:method name="Method 1" id="a944df83-9b44-48ad-9d08-8f3dcc6a1e2c" method="GET"><con:settings/><con:parameters/><con:request name="GET" id="6df3c569-531b-4ac5-9a57-1a92aebd8f95" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://petstore.swagger.io</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><con:entry key="pet" value=""/></con:parameters></con:request></con:method></con:resource><con:method name="Pet" id="9a451e4c-0f15-4277-8805-611c2eac288d" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:pet="https://petstore.swagger.io/v2/pet">pet:Response</con:element></con:representation><con:request name="POST" id="ad37eb57-fd2c-4ef4-82c2-25fb251c8a77" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://petstore.swagger.io</con:endpoint><con:request>{
+  "id": 0,
+  "category": {
+    "id": 0,
+    "name": "string"
+  },
+  "name": "doggie",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method><con:method name="Method 2" id="9268a180-7ab0-4548-8c22-bdaac04a6337" method="PUT"><con:settings/><con:parameters/><con:request name="PUT" id="d387b556-06b6-43b4-859d-71445fb32ece" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://petstore.swagger.io</con:endpoint><con:request>{
+  "id": 0,
+  "category": {
+    "id": 0,
+    "name": "string"
+  },
+  "name": "doggie",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource><con:resource name="{petid}" path="/v2/{petid}" id="bee86d6e-ce5d-40cf-9a7b-9810552442a9"><con:settings/><con:parameters><con:parameter required="true"><con:name>petid</con:name><con:value>petid</con:value><con:style>TEMPLATE</con:style><con:default>petid</con:default></con:parameter></con:parameters><con:method name="Method 1" id="ce43b062-f902-45fe-9884-d08975ce4ae9" method="DELETE"><con:settings/><con:parameters/><con:request name="DELETE" id="69572bad-6a12-456d-94f4-7e5f332e1cc4" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://petstore.swagger.io</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><con:entry key="petid" value=""/></con:parameters></con:request></con:method></con:resource></con:interface><con:testSuite id="f274cbed-42a7-4009-a26f-b17f7ac6a072" name="Positive_Cases"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="7ee03639-bda6-4834-87e3-f67012a71e70" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Test_Case1" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="datasource" name="Data Source" id="22713a4c-6b15-407d-b100-009eaf237f83"><con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSource type="Excel"><con:configuration><file>C:/Users/SubaJanakiD/Desktop/SDET/SDET Assignments/API111/New Microsoft Excel Worksheet.xlsx</file><worksheet>Sheet1</worksheet><cell>A2</cell><ignoreEmpty>true</ignoreEmpty><evaluateFormulas>false</evaluateFormulas></con:configuration></con:dataSource><con:shared>true</con:shared><con:restartShared>true</con:restartShared><con:property>Name</con:property><con:property>Id</con:property><con:property>Response</con:property><con:restartOnRun>true</con:restartOnRun></con:config></con:testStep><con:testStep type="restrequest" name="REST Request" id="9e39cf89-de18-4838-8b45-d0f9c762ae9b"><con:settings/><con:config service="https://petstore.swagger.io" resourcePath="/v2/pet" methodName="Pet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="ad37eb57-fd2c-4ef4-82c2-25fb251c8a77" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://petstore.swagger.io</con:endpoint><con:request>{
+  "id": 0,
+  "category": {
+    "id": 0,
+    "name": "string"
+  },
+  "name": "doggie",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}</con:request><con:originalUri>https://petstore.swagger.io/v2/pet</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="datasink" name="Data Sink" id="f9258299-46db-4507-8e6a-81a3968568e9"><con:settings/><con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSink type="Excel"><con:configuration><file/><outfile>C:/Users/SubaJanakiD/Desktop/SDET/SDET Assignments/API111/New Microsoft Excel Worksheet.xlsx</outfile><worksheet>Sheet1</worksheet><cell>B2</cell><evaluateFormulas>false</evaluateFormulas><append>false</append></con:configuration></con:dataSink><con:properties><con:property><con:name>Id</con:name><con:value>${REST Request#Response#$['id']}</con:value></con:property><con:property><con:name>Response</con:name><con:value>${REST Request#Response}</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="datasourceloop" name="Data Source Loop" id="929d0573-db67-4940-9ddc-674ab15122a5"><con:settings/><con:config><dataSourceStep>Data Source</dataSourceStep><targetStep>REST Request</targetStep><discardResults>true</discardResults></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>9e39cf89-de18-4838-8b45-d0f9c762ae9b</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>f9258299-46db-4507-8e6a-81a3968568e9</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="8746c5f5-b735-493d-a207-300cfa9dfacd" name="Negative_Cases"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="8306dd86-5a84-42fb-b92d-bed01af76cf1" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Test_Case1" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:savedRecentRuns>1</con:savedRecentRuns><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:jmsConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:reportTemplates/><con:xmlTemplates/><con:xmlTemplates/><con:parameters/><con:parameters/></con:reporting><con:reporting/><con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest"><con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to ReadyAPI functional tests
+
+// If hardcoding the token, uncomment and change line 5
+// token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script></con:eventHandlers><con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep"><con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new java.io.FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new java.io.PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script></con:eventHandlers><con:authRepository/><con:tags/></con:soapui-project>
